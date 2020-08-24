@@ -22,7 +22,7 @@ function binarySearch(array, complement, first = 0, last = array.length - 1){
       return array[middle]
     case array[last] === complement:
       return array[last]
-    
+
       break;
     default:
 
