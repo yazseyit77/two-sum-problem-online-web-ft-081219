@@ -31,3 +31,19 @@ function binarySearch(array, complement, first = 0, last = array.length - 1){
 
   }
 }
+
+
+function binarySearchTwoSum(array, sum){
+  array.sort();
+
+  let result = [];
+  let complements = [];
+
+  for(let i in array){
+    let complement = binarySearch(array, sum - array[i])
+    if(complement && !complements.includes(array[i]) && !complements.includes(complement)){
+      result.push([array[i], complement])
+      complements.push(complement)
+    }
+  }
+}
