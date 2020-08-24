@@ -54,8 +54,8 @@ function binaryMatch(array, sum){
 
   for(let i in array){
     if(binarySearch(array, sum - array[i])){
-      return false;
+      return true;
     }
   }
-  return true;
+  return false;
 }
