@@ -8,5 +8,5 @@ function bruteForceTwoSum(array, sum){
       }
     })
   })
-  return result
+  return result;
 }
