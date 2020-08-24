@@ -4,7 +4,7 @@ function bruteForceTwoSum(array, sum){
     let seconds = array.slice(index + 1, array.length)
     seconds.forEach(second => {
       if(first + second === sum){
-        result.push([first, second])
+        result.push([first, second]);
       }
     })
   })
