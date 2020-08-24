@@ -29,9 +29,5 @@ function binarySearch(array, complement, first = 0, last = array.length - 1){
     case array[middle] < complement:
       return binarySearch(array, complement, middle + 1, last - 1)
 
-
-      break;
-    default:
-
   }
 }
