@@ -59,3 +59,20 @@ function binaryMatch(array, sum){
   }
   return false;
 }
+
+
+function hashTwoSum(array, sum){
+  let result = [];
+  let container = {};
+
+  for(let i in array){
+    let complement = sum - array[i];
+
+    if(complement in hash){
+      result.push([complement, array[i]])
+    }
+    container[array[i]] = i
+  }
+  return result;
+}
+  
