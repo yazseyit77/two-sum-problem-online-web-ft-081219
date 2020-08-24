@@ -71,8 +71,7 @@ function hashTwoSum(array, sum){
     if(complement in hash){
       result.push([complement, array[i]])
     }
-    container[array[i]] = i
+    container[array[i]] = i;
   }
   return result;
 }
-  
