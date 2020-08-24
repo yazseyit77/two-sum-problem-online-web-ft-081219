@@ -46,4 +46,5 @@ function binarySearchTwoSum(array, sum){
       complements.push(complement)
     }
   }
+  return result;
 }
