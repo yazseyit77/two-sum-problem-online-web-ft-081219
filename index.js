@@ -10,3 +10,8 @@ function bruteForceTwoSum(array, sum){
   })
   return result;
 }
+
+
+function binarySearch(array, complement, first = 0, last = array.length - 1){
+  let middle = Math.floor(first+ (last - first) / 2)
+}
