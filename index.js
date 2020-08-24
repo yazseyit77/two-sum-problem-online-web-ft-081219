@@ -63,7 +63,7 @@ function binaryMatch(array, sum){
 
 function hashTwoSum(array, sum){
   let result = [];
-  let container = {};
+  let hash = {};
 
   for(let i in array){
     let complement = sum - array[i];
@@ -71,7 +71,7 @@ function hashTwoSum(array, sum){
     if(complement in hash){
       result.push([complement, array[i]])
     }
-    container[array[i]] = i;
+    hash[array[i]] = i;
   }
   return result;
 }
