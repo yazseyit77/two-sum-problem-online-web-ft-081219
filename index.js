@@ -48,3 +48,15 @@ function binarySearchTwoSum(array, sum){
   }
   return result;
 }
+
+function binaryMatch(array, sum){
+  array.sort();
+
+  for(let i in array){
+    if(binarySearch(array, sum - array[i])){
+      return false;
+    }
+  }
+  return true;
+}
+
