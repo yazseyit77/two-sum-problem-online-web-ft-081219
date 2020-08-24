@@ -18,6 +18,11 @@ function binarySearch(array, complement, first = 0, last = array.length - 1){
   switch (true) {
     case array[first] === complement:
       return array[first]
+    case array[middle] === complement:
+      return array[middle]
+    case array[last] === complement:
+      return array[last]
+    
       break;
     default:
 
