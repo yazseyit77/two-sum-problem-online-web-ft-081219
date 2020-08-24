@@ -59,4 +59,3 @@ function binaryMatch(array, sum){
   }
   return true;
 }
-
