@@ -13,5 +13,13 @@ function bruteForceTwoSum(array, sum){
 
 
 function binarySearch(array, complement, first = 0, last = array.length - 1){
-  let middle = Math.floor(first+ (last - first) / 2)
+  let middle = Math.floor(first+ (last - first) / 2);
+
+  switch (true) {
+    case array[first] === complement:
+      return array[first]
+      break;
+    default:
+      
+  }
 }
